@@ -1,23 +1,16 @@
 import { createStore, combineReducers } from 'redux';
-import React, { PropTypes } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
+import { browserHistory } from 'react-router';
+import { syncHistoryWithStore } from 'react-router-redux';
+import Root from '../components/Root';
+import configureStore from './configureStore';
+
+const store = configureStore();
+const history = syncHistoryWithStore(browserHistory, store);
 
 
-let renderApp = () => {
-  debugger
-  ReactDOM.render(
-    <p>"Hello, World!"</p>,
-    document.getElementById('app')
-  )
-}
-
-function ready(fn) {
-  if (document.readyState != 'loading'){
-    fn();
-  } else {
-    document.addEventListener('DOMContentLoaded', fn);
-  }
-}
-
-ready(renderApp);
+ReactDOM.render(
+  <Root store={store} history={history} />,
+  document.getElementById('app')
+)
