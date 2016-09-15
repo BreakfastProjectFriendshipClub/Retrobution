@@ -5,7 +5,7 @@ module.exports = {
     path: './app/assets/react/src/main.js'
   },
   output: {
-    path: '../assets/javascripts',
+    path: './app/assets/javascripts',
     filename: 'bundle.js'
   },
   module: {
@@ -25,7 +25,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ],
   devtool: 'eval-source-map',
-  resolve: { 
+  resolve: {
     extensions: ['', '.jsx', '.js']
   }
 }
