@@ -8,7 +8,7 @@
     "start": "npm run webpack -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:single-run": "npm run test -- --single-run",
-    "webpack": "node_modules/.bin/webpack --config ./app/assets/react/webpack.config.js"
+    "webpack": "node_modules/.bin/webpack --config ./react/webpack.config.js"
   },
   "author": "",
   "license": "ISC",
