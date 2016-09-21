@@ -1,0 +1,25 @@
+.emotions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .emotion-icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+  }
+
+  .happy-icon {
+    background-image: image-url('happy.png');
+  }
+
+  .meh-icon {
+    background-image: image-url('meh.png');
+  }
+
+  .sad-icon {
+    background-image: image-url('sad.png');
+  }
+}
