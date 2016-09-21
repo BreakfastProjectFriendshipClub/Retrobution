@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router' 
 
-const Emotions = () => {
+const EmotionWrapper = () => {
   return (
       <div> 
         <Link to="/happy"> :] </Link> 
@@ -12,4 +11,4 @@ const Emotions = () => {
       )
 };
 
-export default Emotions;
+export default EmotionWrapper;
