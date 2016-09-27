@@ -20,10 +20,7 @@ module.exports = {
         loader: 'babel'
       }
     ]
-  },  
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
+  },
   devtool: 'eval-source-map',
   resolve: {
     extensions: ['', '.jsx', '.js']

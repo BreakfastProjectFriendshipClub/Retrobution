@@ -1,14 +1,18 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
+
 import App from '../components/App';
-import Emotions from '../components/Emotions';
+import {
+  HappyWrapper,
+  MehWrapper,
+  SadWrapper
+} from './../components/EmotionWrappers'
 
 let routes = (
   <Route path="/" component={App}>
-     <IndexRoute component={Emotions}/>
-     <Route path="/happy" component={Emotions}/>
-     <Route path="/meh" component={Emotions}/>
-     <Route path="/sad" component={Emotions}/>
+    <Route path="/happy" component={HappyWrapper}/>
+    <Route path="/meh" component={MehWrapper}/>
+    <Route path="/sad" component={SadWrapper}/>
   </Route>
 );
 

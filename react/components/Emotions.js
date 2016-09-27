@@ -1,13 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router' 
+import { Link } from 'react-router'
 
 const Emotions = () => {
   return (
-      <div> 
-        <Link to="/happy"> :] </Link> 
-        <Link to="/meh"> :| </Link> 
-        <Link to="/sad"> :[ </Link> 
-        <p>Hello from Emotions, you dirty animal!</p>
+      <div className="emotions">
+        <Link to="/happy">
+          <div className="happy-icon emotion-icon" />
+        </Link>
+        <Link to="/meh">
+          <div className="meh-icon emotion-icon" />
+        </Link>
+        <Link to="/sad">
+          <div className="sad-icon emotion-icon" />
+        </Link>
       </div>
       )
 };
